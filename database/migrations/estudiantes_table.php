@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('estudiantes', function (Blueprint $table) {
             $table->char('codEstudiante', 4);
-            $table->date('nomEstudiante', 30);
+            $table->char('nomEstudiante', 30);
             $table->integer('edaEstudiante');
             $table->date('fechEstudiante');
             $table->char('sexEstudiante', 1);

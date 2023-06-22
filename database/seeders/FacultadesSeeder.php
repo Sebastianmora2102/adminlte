@@ -19,16 +19,24 @@ class FacultadesSeeder extends Seeder
     {
         $datos =[
             [
-                'codFacultad' => '10',
+                'codFacultad' => '01',
                 'nomFacultad' => 'Artes'
             ],
             [
-                'codFacultad' => '20',
+                'codFacultad' => '02',
                 'nomFacultad' => 'Ingeniería'
             ],
             [
-                'codFacultad' => '30',
+                'codFacultad' => '03',
                 'nomFacultad' => 'Salud'
+            ],
+            [
+                'codFacultad' => '04',
+                'nomFacultad' => 'Derecho'
+            ],
+            [
+                'codFacultad' => '05',
+                'nomFacultad' => 'Veterinaria'
             ]
         ];
         DB::table('facultades')->insert($datos);

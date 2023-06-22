@@ -8,10 +8,10 @@
 
 @section('content')
     <p>Listado de Facultades</p>
-    <a class="btn btn-success" href="/facultades/registrar">Adicionar Facultades</a>
+    <a class="btn btn-success" href="/facultades/registrar">Adicionar</a><br>
     <table class="table">
         <thead>
-            <tr>
+            <tr><br>
             <th scope="col">#</th>
             <th scope="col">Codigo</th>
             <th scope="col">Nombre</th>
