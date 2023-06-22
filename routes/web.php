@@ -24,18 +24,30 @@ Route::get('/', function () {
 });
 
 Route::get('/dashboard', [HomeController::class, 'index']);
-
+#=====================================================================================================
 Route::get('/facultades/listado', [Facultades::class, 'index'])->name('listadoFac');
 
 Route::get('/facultades/registrar', [Facultades::class, 'form_registro']);
 Route::post('/facultades/registrar', [Facultades::class, 'registrar']);
 Route::get('/facultades/eliminar/{id}', [Facultades::class, 'eliminar'])->name('eliminarFac');
+#=====================================================================================================
+Route::get('/programas/listado', [Programas::class, 'index'])->name('listadoPro');
 
-Route::get('/programas/listado', [Programas::class, 'index']);
+Route::get('/programas/registrar', [Programas::class, 'form_registro']);
+Route::post('/programas/registrar', [Programas::class, 'registrar']);
+Route::get('/programas/eliminar/{id}', [Programas::class, 'eliminar'])->name('eliminarPro');
+#=====================================================================================================
+Route::get('/estudiantes/listado', [Estudiantes::class, 'index'])->name('listadoEst');
 
-Route::get('/estudiantes/listado', [Estudiantes::class, 'index']);
+Route::get('/estudiantes/registrar', [Estudiantes::class, 'form_registro']);
+Route::post('/estudiantes/registrar', [Estudiantes::class, 'registrar']);
+Route::get('/estudiantes/eliminar/{id}', [Estudiantes::class, 'eliminar'])->name('eliminarEst');
+#=====================================================================================================
+Route::get('/profesores/listado', [Profesores::class, 'index'])->name('listadoProfes');
 
-Route::get('/profesores/listado', [Profesores::class, 'index']);
-
+Route::get('/profesores/registrar', [Profesores::class, 'form_registro']);
+Route::post('/profesores/registrar', [Profesores::class, 'registrar']);
+Route::get('/profesores/eliminar/{id}', [Profesores::class, 'eliminar'])->name('eliminarProfes');
+#=====================================================================================================
 Route::get('/regnotas/listado', [Calificaciones::class, 'index']);
 
